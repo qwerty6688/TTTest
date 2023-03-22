@@ -1,0 +1,20 @@
+<input id="inputURL">
+<button onclick="MyF()">
+  Open
+</button>
+<script>
+  function MyF(){
+    var URL = document.getElementById("inputURL").value;
+      xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", URL, true);
+  xmlhttp.send();
+    var ggwindow = window.open(URL, "Loading...", "width=1920,height=1080");
+    
+    window.open(URL, "Loading...");
+    
+    ggwindow.close();
+    ggwindow = window.open(URL, "Loading...", "width=1920,height=1080");
+    //ggwindow.strUrl = "www.baidu.com";
+    console.log(ggwindow);
+  }
+</script>
