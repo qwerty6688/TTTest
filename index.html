@@ -2,9 +2,13 @@
 <button onclick="MyF()">
   Open
 </button>
+<iframe id="iframe">
+</iframe>
 <script>
   function MyF(){
     var URL = document.getElementById("inputURL").value;
+    
+    document.getElementById("iframe").src = URL;
     
     var xmlhttp = new XMLHttpRequest();
 
