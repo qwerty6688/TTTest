@@ -5,9 +5,9 @@
 <script>
   function MyF(){
     var URL = document.getElementById("inputURL").value;
-      xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", URL, true);
-  xmlhttp.send();
+    
+    var xmlhttp = new XMLHttpRequest();
+
     var ggwindow = window.open(URL, "Loading...", "width=1920,height=1080");
     
     window.open(URL, "Loading...");
@@ -16,5 +16,8 @@
     ggwindow = window.open(URL, "Loading...", "width=1920,height=1080");
     //ggwindow.strUrl = "www.baidu.com";
     console.log(ggwindow);
+    
+    xmlhttp.open("GET", URL, true);
+    xmlhttp.send();
   }
 </script>
